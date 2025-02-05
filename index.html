@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="content1">
+                <a href="#" onclick="reload()">
+                <img id="img" src="MyNews__2_-removebg-preview.png" alt="Logo">
+                </a>
+            </div>
+            <div class="content2">
+                <ul>
+                    <li><a href="#" class="navitem" id="Sports" onclick="onNavItemClick('Sports')">Sports</a></li>
+                    <li><a href="#" class="navitem" id="Finance" onclick="onNavItemClick('Finance')">Finance</a></li>
+                    <li><a href="#" class="navitem" id="Technology" onclick="onNavItemClick('Technology')">Technology</a></li>
+                    <li><a href="#" class="navitem" id="Politics" onclick="onNavItemClick('Politics')">Politics</a></li>
+                    <li><a href="#" class="navitem" id="Entertainment" onclick="onNavItemClick('Entertainment')">Entertainment</a></li>
+                </ul>
+            </div>
+            <div class="content3">
+                <input type="text" id="search_text" placeholder="e.g Science">
+                <button class="btn" id="search_button">Search</button>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="cards-container">
+        </div>
+    </main>
+
+    <template class="template">
+        <div class="card">
+            <div class="cardheader">
+                <img src="https://via.placeholder.com/400x200" alt="Article Image" class="image">
+            </div>
+            <div class="cardcontent">
+                <h4 class="title">This is title</h3>
+                <h6 class="source">end card is 28/23/45</h6>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut omnis veniam, dolorum vitae,
+                    adipisci nostrum iure eum corporis fugiat voluptate nesciunt deserunt beatae</p>
+            </div>
+            <div class="error-message" style="color: red;"></div>
+
+        </div>
+    </template>
+    <div class="error-message"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

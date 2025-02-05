@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    position: fixed;
+    top:0px;
+    box-shadow: 0 0 7px;
+    background-color: rgb(193, 199, 198);
+    height:77px;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 0 5px 7px rgb(202, 241, 241) ;
+}
+#img{
+   height: 156px;
+   width: 182px;
+   position: relative;
+   top:-68px;
+   left:-5px;
+}
+.content2 li{
+   font-size: large;
+   list-style: none;
+   padding:0px 8px;
+}
+.content2 li a{
+    text-decoration: none;
+    color : white
+}
+.content2 a:hover{
+    color: rgb(18, 18, 20);
+}
+.content2 a:active{
+    color:red;
+}
+.content2 ul{
+    display: flex;
+}
+.content3 input{
+    height:29px;
+    border: 2px solid rgb(206, 193, 193);
+    border-radius:5px;
+    padding-inline: 5px;
+    color: gray;
+    font-size: 12px;
+}
+.content3 .btn{
+    height:27px;
+    width: 56px;
+    padding: 2px;
+    color: white;
+    background-color: rgb(20, 71, 236);
+    border: 2px solid rgb(206, 193, 193);
+    border-radius:5px;
+}
+.content3 .btn:hover{
+    background-color: blue;
+}
+.content3 .btn:active{
+    background-color:red;
+}
+.content3 input::placeholder{
+    padding: 5px;
+}
+.description{
+    font-size:14px;
+}
+main{
+    display: flex;
+    padding: 0px 125px;
+    margin-block:20px ;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 21px;
+    align-items: start;
+     margin-top:101px;
+     line-height: 21px;
+    /* margin-right: 38px; */ 
+}
+.cardheader img{
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+.cardcontent{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.card{
+    height:380px;
+    width: 348px;
+    cursor: pointer;
+    border-radius: 3px;
+    /* box-shadow: 0px 2px 7px rgb(85, 97, 94); */
+    overflow: auto;
+    background-color: rgb(248, 250, 249);
+    transition: all 0.07s ease-in;
+    z-index: 10;
+}
+.card:hover{
+    transform: scale(1.013);
+    background-color: rgb(193, 199, 198);
+    box-shadow: 0 5px 7px rgba(0,0,0,1.2);
+}
+
+.navitem.active{
+   color: rgb(4, 0, 255);
+}
